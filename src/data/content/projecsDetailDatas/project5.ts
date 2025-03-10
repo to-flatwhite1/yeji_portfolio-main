@@ -38,6 +38,16 @@ export const project5 = {
         'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick_mypage.webp',
       subject: '마이페이지',
     },
+    {
+      imgurl:
+        'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick_playList.webp',
+      subject: '영화 플레이리스트',
+    },
+    {
+      imgurl:
+        'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick_playList_detail.webp',
+      subject: '영화 상세페이지',
+    },
   ],
   featinfo: [
     'tmdb API를 활용해 영화 표출',
