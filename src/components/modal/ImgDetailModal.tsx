@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 
 type propsT = {
   imgUrl?: string;
-}
+};
 
 export const ImgModalBox = tw.div`
   fixed
@@ -45,11 +45,11 @@ export const BtnBox = tw.div`
 
 export const Img = tw.img`
   w-full
+ 
   rounded-md
-`
+`;
 
 function ImgDetailModal({ imgUrl }: propsT) {
-
   const dispatch = useDispatch();
 
   const toggleModal = () => {
@@ -63,10 +63,10 @@ function ImgDetailModal({ imgUrl }: propsT) {
         <BtnBox>
           <CloseBtn closeModal={toggleModal} />
         </BtnBox>
-        <Img src={imgUrl} alt='project img' />
+        <Img src={imgUrl} alt="project img" />
       </ImgBox>
     </ImgModalBox>
-  )
+  );
 }
 
 export default ImgDetailModal;

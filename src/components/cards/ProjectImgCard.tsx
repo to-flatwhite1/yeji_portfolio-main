@@ -28,6 +28,8 @@ export const Imgsubject = tw.p`
 export const Img = tw.img`
   border-solid
   border-[1px]
+  w-full
+  h-[215px]
   border-[#eaeaea]
 `;
 
@@ -37,10 +39,10 @@ function ProjectImgCard({ imgurl, subject, toggleImgModal, id }: PropsT) {
 
   return (
     <ImgCont id={strId} ref={imgRef} onClick={(e) => toggleImgModal(e)}>
-      <Img src={imgurl} loading='lazy' alt='프로젝트 구현 화면' />
+      <Img src={imgurl} loading="lazy" alt="프로젝트 구현 화면" />
       <Imgsubject>{subject}</Imgsubject>
     </ImgCont>
-  )
+  );
 }
 
 export default ProjectImgCard;
