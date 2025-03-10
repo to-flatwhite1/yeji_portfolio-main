@@ -36,7 +36,7 @@ export type RecordDataT = {
   data: string;
   title: string;
   role: string;
-  infos?: string;
+  infos: string | string[];
   stacks?: string[];
 };
 
