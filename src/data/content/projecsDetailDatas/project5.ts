@@ -4,14 +4,14 @@ export const project5 = {
   title: 'OTT Platform project - Reelpick',
   subtext:
     '릴픽(REELPICK)은 사용자가 직접 보고싶은 영화 또는 영상을 선택하여 \n자신만의 취향대로 선택해서 볼 수 있는 OTT 플랫폼입니다.\n 프로젝트명 REELPICK은 영화 촬영 시 사용되는 필름 릴(REEL)에서\n 착안하여 사용자가 선택(PICK)한 콘텐츠를 중심으로 서비스를 제공한다는 의미를 담고 있습니다.',
-  data: '2023.07 - 2023.08',
+  data: '2024.12 - 2025.02',
   team: '3인 (프론트엔드 3명)',
   tag: ['팀'],
   imgurl:
     'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick.webp',
 
   giturl: 'https://github.com/kksladder/REELPICKott3',
-  depoloyurl: 'reelpic-kott3-icpz.vercel.app/',
+  depoloyurl: 'https://reelpic-kott3-icpz.vercel.app/',
   detailimginfo: [
     {
       imgurl:
@@ -20,22 +20,22 @@ export const project5 = {
     },
     {
       imgurl:
-        'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/images/project_portfolio2.webp',
+        'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick_signup.webp',
       subject: '회원가입',
     },
     {
       imgurl:
-        'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/images/project_portfolio3.webp',
+        'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/ReelPick_login.webp',
       subject: '로그인',
     },
     {
       imgurl:
-        'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/images/project_portfolio4.webp',
+        'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick_membership.webp',
       subject: '멤버십',
     },
     {
       imgurl:
-        'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/images/project_portfolio4.webp',
+        'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick_mypage.webp',
       subject: '마이페이지',
     },
   ],
