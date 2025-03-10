@@ -63,7 +63,7 @@ export const Date = tw.span`
   text-sm
 `;
 
-function RecordCard({ data, title, role, infos, stacks }: RecordDataT) {
+function RecordCard({ data, title, role, infos }: RecordDataT) {
   return (
     <CardContainer>
       <TxtWrap>
