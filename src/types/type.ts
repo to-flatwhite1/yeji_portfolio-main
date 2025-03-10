@@ -36,8 +36,8 @@ export type RecordDataT = {
   data: string;
   title: string;
   role: string;
-  infos: string;
-  stacks: string[];
+  infos?: string;
+  stacks?: string[];
 };
 
 export type ProjectDetailDataT = {
