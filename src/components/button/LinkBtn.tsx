@@ -5,15 +5,15 @@ import { ICON_URL } from '../../utils/constant/constant';
 type BlogT = {
   title?: string;
   url?: string;
-}
+};
 
 type LinkProps = {
   name: string;
   text: string;
   giturl?: string | undefined;
-  depoloyurl?: string | undefined;
+  deployurl?: string | undefined;
   blog?: BlogT[];
-}
+};
 
 export const LinkButton = tw.a`
   relative
@@ -72,30 +72,27 @@ export const Text = tw.span`
   max-md:hidden
 `;
 
-function LinkBtn({ name, text, giturl, depoloyurl, blog }: LinkProps) {
+function LinkBtn({ name, text, giturl, deployurl, blog }: LinkProps) {
   return (
     <>
-      {
-        depoloyurl === '' ? null :
-          blog ? (
-            <HoverButton aria-label={text}>
-              <IconCircle>
-                <Img src={`${ICON_URL}${name}.svg`} alt={name} />
-              </IconCircle>
-              <Text>{text}</Text>
-              {blog && <HoverModal blog={blog} />}
-            </HoverButton>
-          ) : (
-            <LinkButton href={giturl ? giturl : depoloyurl} aria-label={text} title='바로가기(새창)'>
-              <IconCircle>
-                <Img src={`${ICON_URL}${name}.svg`} alt={name} />
-              </IconCircle>
-              <Text>{text}</Text>
-            </LinkButton>
-          )
-      }
+      {deployurl === '' ? null : blog ? (
+        <HoverButton aria-label={text}>
+          <IconCircle>
+            <Img src={`${ICON_URL}${name}.svg`} alt={name} />
+          </IconCircle>
+          <Text>{text}</Text>
+          {blog && <HoverModal blog={blog} />}
+        </HoverButton>
+      ) : (
+        <LinkButton href={giturl ? giturl : deployurl} aria-label={text} title="바로가기(새창)">
+          <IconCircle>
+            <Img src={`${ICON_URL}${name}.svg`} alt={name} />
+          </IconCircle>
+          <Text>{text}</Text>
+        </LinkButton>
+      )}
     </>
   );
 }
 
-export default LinkBtn
+export default LinkBtn;

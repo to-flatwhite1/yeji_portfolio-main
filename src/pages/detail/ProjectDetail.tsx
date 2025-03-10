@@ -217,8 +217,8 @@ function ProjectDetail() {
                 <CloseBtn closeModal={closeModal} />
                 <ContBtns>
                   {projectDetail.giturl && <LinkBtn name="github_bk" giturl={projectDetail.giturl} text="GitHub" />}
-                  {projectDetail.depoloyurl && (
-                    <LinkBtn name="link" depoloyurl={projectDetail.depoloyurl} text="배포 링크" />
+                  {projectDetail.deployurl && (
+                    <LinkBtn name="link" deployurl={projectDetail.deployurl} text="배포 링크" />
                   )}
                 </ContBtns>
               </Btns>

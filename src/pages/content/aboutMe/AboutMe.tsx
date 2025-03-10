@@ -1,8 +1,7 @@
 import tw from 'tailwind-styled-components';
 import { useDispatch } from 'react-redux';
 import { useRef } from 'react';
-import { motion, useScroll, useTransform } from "framer-motion";
-
+import { motion, useScroll, useTransform } from 'framer-motion';
 import StackIcon from '../../../components/atoms/tools/ToolIcon';
 import { StackData } from '../../../data/introData';
 import ReviewDetail from '../../detail/ReviewDetail';
@@ -63,11 +62,10 @@ const SubTit = tw.h5`
   pb-6
 `;
 
-
 const StackSpacing = tw.div`
   flex
   gap-3
-`
+`;
 
 const Stacks = tw(StackSpacing)`
   w-full
@@ -92,16 +90,15 @@ const StackIcons = tw.div`
   w-full
 `;
 
-
 function AboutMe() {
-  const dispatch = useDispatch()
+  const dispatch = useDispatch();
   const moScrollRef = useRef<HTMLDivElement>(null);
 
   const { scrollRef, scrollEl } = useScrollAnimation();
 
   const { scrollYProgress } = useScroll({
     target: moScrollRef,
-    offset: ['0 1', `${isMobile ? '0.8 1' : '1 1'}`]
+    offset: ['0 1', `${isMobile ? '0.8 1' : '1 1'}`],
   });
 
   useTransform(scrollYProgress, (pos) => {
@@ -113,7 +110,7 @@ function AboutMe() {
   return (
     <motion.div ref={moScrollRef}>
       <ReviewDetail />
-      <IntroComponent id='aboutme'>
+      <IntroComponent id="aboutme">
         <SubJectTit>About me</SubJectTit>
         <ScrollAni className={`${scrollEl ? 'fadeAn fadeIn' : 'fadeOut'}`} ref={scrollRef}>
           <Content>
@@ -138,11 +135,9 @@ function AboutMe() {
               </StackWrap>
             </Stacks>
           </Content>
-
         </ScrollAni>
-      </IntroComponent >
+      </IntroComponent>
     </motion.div>
-
   );
 }
 

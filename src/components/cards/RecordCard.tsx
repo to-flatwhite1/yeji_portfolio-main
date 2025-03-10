@@ -1,5 +1,4 @@
 import tw from 'tailwind-styled-components';
-import StackIcon from '../atoms/tools/ToolIcon';
 import { RecordDataT } from '../../types/type';
 
 export const CardContainer = tw.section`
@@ -77,7 +76,6 @@ function RecordCard({ data, title, role, infos, stacks }: RecordDataT) {
           <RecordList>{infos}</RecordList>
         </RecordUl>
       </TxtWrap>
-      {/*  <Tags>{stacks || stacks.map((stack, idx) => <StackIcon key={idx} stack={stack} width={`w-[50px]`} />)}</Tags> */}
     </CardContainer>
   );
 }

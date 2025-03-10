@@ -9,7 +9,7 @@ export const project8 = {
   imgurl:
     'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/samsungsdi.webp',
   giturl: 'https://github.com/to-flatwhite1/samsung-sdi',
-  depoloyurl: 'https://samsung-sdi.vercel.app/',
+  deployurl: 'https://samsung-sdi.vercel.app/',
   featinfo: [
     'GSAP을 활용한 메인 및 서브 페이지 인터랙션 애니메이션 구현',
     '반응형 웹 디자인 및 다양한 디바이스에 최적화된 UI/UX 설계',

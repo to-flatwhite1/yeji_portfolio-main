@@ -29,7 +29,7 @@ export type ProjectDataT = {
   tag: string[];
   imgurl?: string;
   giturl?: string;
-  depoloyurl?: string;
+  deployurl?: string;
 };
 
 export type RecordDataT = {
@@ -54,7 +54,7 @@ export type ProjectDetailDataT = {
     subject: string;
   }[];
   giturl?: string;
-  depoloyurl?: string;
+  deployurl?: string;
   blogurl?: {
     title: string;
     url: string;

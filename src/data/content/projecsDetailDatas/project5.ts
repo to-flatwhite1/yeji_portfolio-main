@@ -11,7 +11,7 @@ export const project5 = {
     'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick.webp',
 
   giturl: 'https://github.com/kksladder/REELPICKott3',
-  depoloyurl: 'https://reelpic-kott3-icpz.vercel.app/',
+  deployurl: 'https://reelpic-kott3-icpz.vercel.app/',
   detailimginfo: [
     {
       imgurl:

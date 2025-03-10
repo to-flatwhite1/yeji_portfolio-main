@@ -100,7 +100,7 @@ export const Button = tw.button`
   hover:text-mainBlack
 `;
 
-function ProjectCard({ title, subject, tag, imgurl, name, giturl, depoloyurl }: ProjectDataT) {
+function ProjectCard({ title, subject, tag, imgurl, name, giturl, deployurl }: ProjectDataT) {
   const { openModal } = useModal();
 
   return (
@@ -110,7 +110,7 @@ function ProjectCard({ title, subject, tag, imgurl, name, giturl, depoloyurl }: 
         <BtnBox>
           <Button onClick={() => openModal(name)}>자세히 보기</Button>
           {giturl && <Button onClick={() => window.open(giturl)}>Github 바로가기</Button>}
-          {depoloyurl && <Button onClick={() => window.open(depoloyurl)}>사이트 바로가기</Button>}
+          {deployurl && <Button onClick={() => window.open(deployurl)}>사이트 바로가기</Button>}
         </BtnBox>
       </HoverBox>
 

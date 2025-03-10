@@ -10,7 +10,7 @@ export const project9 = {
   imgurl:
     'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/sulwhasoo.webp',
   giturl: 'https://github.com/to-flatwhite1/project1',
-  depoloyurl: 'https://to-flatwhite1.github.io/project1/pages/',
+  deployurl: 'https://to-flatwhite1.github.io/project1/pages/',
   featinfo: [
     '다이나믹한 애니메이션: GSAP을 활용한 부드럽고 매끄러운 화면 전환 효과',
     '반응형 디자인: SCSS를 활용해 다양한 디바이스 환경에 최적화',

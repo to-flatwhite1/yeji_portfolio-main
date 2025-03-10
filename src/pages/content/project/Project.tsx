@@ -25,7 +25,7 @@ const ProjectComponent = tw.section`
 
 const Container = tw.article`
   pt-20
-`
+`;
 
 const TabMenuList = tw.div`  
   w-fit
@@ -39,8 +39,7 @@ const TabMenuList = tw.div`
   bg-lightGray
 
   max-sm:w-full
-`
-
+`;
 
 function Project({ id, navTabs }: TabsPropsT) {
   const filterDataList = useSelector((state: RootState) => state.filteringKeyword.filterDataArr);
@@ -49,27 +48,28 @@ function Project({ id, navTabs }: TabsPropsT) {
   return (
     <>
       <ScrollAni className={`${scrollEl ? 'fadeAn fadeIn' : 'fadeOut'}`} ref={scrollRef}>
-        <Container id={id} ref={navTabs[1].targetRef} >
+        <Container id={id} ref={navTabs[1].targetRef}>
           <TabMenuList>
-            {
-              tabMenuList.map((item) => (
-                <TabBtn key={item.type} type={item.type}>{item.name}</TabBtn>
-              ))
-            }
+            {tabMenuList.map((item) => (
+              <TabBtn key={item.type} type={item.type}>
+                {item.name}
+              </TabBtn>
+            ))}
           </TabMenuList>
           <ProjectComponent>
-            {filterDataList.length <= 0 && projectData.map((item, idx) => (
-              <ProjectCard
-                key={idx}
-                name={item.name}
-                title={item.title}
-                subject={item.subject}
-                tag={item.tag}
-                imgurl={item.imgurl}
-                giturl={item.giturl}
-                depoloyurl={item.depoloyurl}
-              />
-            ))}
+            {filterDataList.length <= 0 &&
+              projectData.map((item, idx) => (
+                <ProjectCard
+                  key={idx}
+                  name={item.name}
+                  title={item.title}
+                  subject={item.subject}
+                  tag={item.tag}
+                  imgurl={item.imgurl}
+                  giturl={item.giturl}
+                  deployurl={item.deployurl}
+                />
+              ))}
             {filterDataList.map((item, idx) => (
               <ProjectCard
                 key={idx}
@@ -79,12 +79,11 @@ function Project({ id, navTabs }: TabsPropsT) {
                 tag={item.tag}
                 imgurl={item.imgurl}
                 giturl={item.giturl}
-                depoloyurl={item.depoloyurl}
+                deployurl={item.deployurl}
               />
             ))}
           </ProjectComponent>
         </Container>
-
       </ScrollAni>
     </>
   );
