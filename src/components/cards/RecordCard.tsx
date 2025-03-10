@@ -41,7 +41,6 @@ export const RecordUl = tw.ul`
 export const RecordList = tw.li`
   pl-2.5
   relative
-
   before:absolute
   before:w-1
   before:h-1
@@ -64,6 +63,9 @@ export const Date = tw.span`
 `;
 
 function RecordCard({ data, title, role, infos }: RecordDataT) {
+  // Ensure infos is an array if it's a single string
+  const infosArray = Array.isArray(infos) ? infos : [infos];
+
   return (
     <CardContainer>
       <TxtWrap>
@@ -73,7 +75,9 @@ function RecordCard({ data, title, role, infos }: RecordDataT) {
           <Role>{role}</Role>
         </Tit>
         <RecordUl>
-          <RecordList>{infos}</RecordList>
+          {infosArray.map((info, idx) => (
+            <RecordList key={idx}>{info}</RecordList>
+          ))}
         </RecordUl>
       </TxtWrap>
     </CardContainer>
