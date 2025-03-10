@@ -7,12 +7,38 @@ export const project5 = {
   data: '2023.07 - 2023.08',
   team: '3인 (프론트엔드 3명)',
   tag: ['팀'],
-  /*  imgurl:
-    'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio/refs/heads/main/src/assets/images/sulwhasoo.png?token=GHSAT0AAAAAAC7IFLNVKLLWFZA6IJ6VCMJUZ6OTFLA', */
+  imgurl:
+    'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick.webp',
 
   giturl: 'https://github.com/kksladder/REELPICKott3',
   depoloyurl: 'reelpic-kott3-icpz.vercel.app/',
-
+  detailimginfo: [
+    {
+      imgurl:
+        'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick.webp',
+      subject: '메인 화면',
+    },
+    {
+      imgurl:
+        'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/images/project_portfolio2.webp',
+      subject: '회원가입',
+    },
+    {
+      imgurl:
+        'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/images/project_portfolio3.webp',
+      subject: '로그인',
+    },
+    {
+      imgurl:
+        'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/images/project_portfolio4.webp',
+      subject: '멤버십',
+    },
+    {
+      imgurl:
+        'https://raw.githubusercontent.com/jieun419/jieun_portfolio/main/src/assets/images/project_portfolio4.webp',
+      subject: '마이페이지',
+    },
+  ],
   featinfo: [
     'tmdb API를 활용해 영화 표출',
     '시청기록 찜 기능',

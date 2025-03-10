@@ -7,7 +7,7 @@ export const project8 = {
   data: '2024.12.18 ~ 20일',
   tag: ['개인', '웹', '반응형'],
   imgurl:
-    'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio/refs/heads/main/src/assets/images/samsungsdi.webp',
+    'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/samsungsdi.webp',
   giturl: 'https://github.com/to-flatwhite1/samsung-sdi',
   depoloyurl: 'https://samsung-sdi.vercel.app/',
   featinfo: [

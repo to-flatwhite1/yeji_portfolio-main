@@ -8,7 +8,7 @@ export const project9 = {
   tag: ['개인', '웹', '반응형'],
 
   imgurl:
-    'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio/refs/heads/main/src/assets/images/sulwhasoo.webp',
+    'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/sulwhasoo.webp',
   giturl: 'https://github.com/to-flatwhite1/project1',
   depoloyurl: 'https://to-flatwhite1.github.io/project1/pages/',
   featinfo: [
