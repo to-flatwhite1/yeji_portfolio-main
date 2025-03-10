@@ -5,7 +5,7 @@ import { useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import { isMobile } from '../../../utils/isMobile';
-import myImg from '../../../assets/images/profile_img_YEJI.webp';
+import myImg from '../../../assets/images/profile.webp';
 import SocialLinkList from '../../../components/main/SocialList';
 import ScrollArrow from '../../../components/main/ScrollArrow';
 import InfoWrap from '../../../components/main/InfoWrap';
