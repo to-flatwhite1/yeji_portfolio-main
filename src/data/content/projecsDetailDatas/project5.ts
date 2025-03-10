@@ -9,7 +9,6 @@ export const project5 = {
   tag: ['팀'],
   imgurl:
     'https://raw.githubusercontent.com/to-flatwhite1/yeji_portfolio-main/refs/heads/main/src/assets/images/Reelpick.webp',
-
   giturl: 'https://github.com/kksladder/REELPICKott3',
   deployurl: 'https://reelpic-kott3-icpz.vercel.app/',
   detailimginfo: [

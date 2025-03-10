@@ -67,7 +67,7 @@ function Project({ id, navTabs }: TabsPropsT) {
                   tag={item.tag}
                   imgurl={item.imgurl}
                   giturl={item.giturl}
-                  deployurl={item.deployurl}
+                  deployurl={item.deployurl ? item.deployurl : ''}
                 />
               ))}
             {filterDataList.map((item, idx) => (
@@ -79,7 +79,7 @@ function Project({ id, navTabs }: TabsPropsT) {
                 tag={item.tag}
                 imgurl={item.imgurl}
                 giturl={item.giturl}
-                deployurl={item.deployurl}
+                deployurl={item.deployurl ? item.deployurl : ''}
               />
             ))}
           </ProjectComponent>

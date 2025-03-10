@@ -11,6 +11,7 @@ export const projectData = [
     tag: project9.tag,
     imgurl: project9.imgurl /* thumnailIMG */,
     giturl: project9.giturl,
+    deployurl: project9.deployurl,
   },
 
   {
@@ -21,6 +22,7 @@ export const projectData = [
     tag: project8.tag,
     imgurl: project8.imgurl,
     giturl: project8.giturl,
+    deployurl: project8.deployurl,
   },
   {
     name: project5.name,
@@ -30,5 +32,6 @@ export const projectData = [
     tag: project5.tag,
     imgurl: project5.imgurl,
     giturl: project5.giturl,
+    deployurl: project5.deployurl,
   },
 ];
