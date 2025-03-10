@@ -1,5 +1,4 @@
 import tw from 'tailwind-styled-components';
-import { useState } from 'react';
 import myImgIm from '../../assets/images/mimoticon.webp';
 
 import TagText from '../atoms/tag/TagTxt';
@@ -32,8 +31,6 @@ const TagTxtWrap = tw.div`
 `;
 
 const LeftWrap = () => {
-  const [isImgChange, setIsImgChange] = useState(false);
-
   return (
     <LeftContainer>
       <FlexBox>
@@ -44,7 +41,6 @@ const LeftWrap = () => {
           ))}
         </TagTxtWrap>
       </FlexBox>
-      {/*   <ShowReviewBtn handelImgChange={handelImgChange}>팀원 리뷰 보기</ShowReviewBtn> */}
     </LeftContainer>
   );
 };

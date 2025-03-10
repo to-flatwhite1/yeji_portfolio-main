@@ -46,7 +46,7 @@ export type ProjectDetailDataT = {
   title: string;
   subtext: string;
   data: string;
-  team: string;
+  team?: string;
   tag: string[];
   imgurl?: string;
   detailimginfo?: {
@@ -64,7 +64,7 @@ export type ProjectDetailDataT = {
     detail: string;
   }[];
   featinfo: string[];
-  parts: {
+  parts?: {
     detailList?: string[];
     title: string;
   }[];
