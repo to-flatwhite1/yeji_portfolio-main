@@ -3,7 +3,7 @@ export const recordData = [
     data: '2024.09 - 2025.03',
     title: '이젠아카데미DX교육센터',
     role: '@ 생성형AI 활용 프론트엔드 개발 수료',
-    infos: ['JavaScript, React ,Next.js 등 학습 \n', '개인 프로젝트 2회, 팀 프로젝트 2회 진행\n '],
+    infos: ['JavaScript, React ,Next.js Redux 등 학습 \n', '개인 프로젝트 2회, 팀 프로젝트 2회 진행\n '],
     stacks: ['html', 'css', 'javascript', 'react', 'github', 'figma'],
   },
   {
