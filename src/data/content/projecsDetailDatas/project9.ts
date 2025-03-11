@@ -23,7 +23,7 @@ export const project9 = {
     },
     {
       title: 'JavaScript (ES6+)',
-      detail: '\n사용자 상호작용 및 기능 구현',
+      detail: '사용자 상호작용 및 기능 구현',
     },
     {
       title: 'GSAP (애니메이션 및 스크롤 인터랙션)',
