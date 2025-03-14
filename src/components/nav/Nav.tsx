@@ -18,7 +18,6 @@ export const NavContainer = tw.nav`
   max-md:top-0
   max-md:w-full
   max-md:h-auto
-  max-md:overflow-y-scroll
   max-md:backdrop-blur-md
 `;
 
